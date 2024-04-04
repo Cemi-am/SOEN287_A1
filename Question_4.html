@@ -1,0 +1,127 @@
+<!--QUESTION 4!-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Question 4 </title>
+        <meta charset="utf-8">
+        <style>
+            body{
+                background-color: lavender;
+            }
+            .field_set1{
+            border-color:darkgreen;
+            border-style: solid;
+            border-width: 6px;
+            background-color: lightblue;
+            color: green;
+            font-weight: bold;
+            }
+
+            .field_set2{
+            border-color:darkred;
+            border-style: solid;
+            border-width: 6px;
+            background-color: pink;
+            color: red;
+            font-weight: bold;
+            }
+            
+            </style>
+        
+    </head>
+    <body>
+        
+        <table>
+            <tr>
+                <th style="font-size: x-large;">Animal Survey</th>
+                <td>
+                    <img src="cathtml.jpeg" alt="Cat"
+                    width="150">
+                </td>
+            </tr>
+        </table>
+        <form>
+        <fieldset class="field_set1">
+            <legend style="color: darkgreen;">Animal Survey Personal Information</legend>
+                <label for="FirstName">First Name</label>
+                <input type="text" id="FirstName"> 
+                <br><br>
+
+                <label for="FamilyName">Family Name</label>
+                <input type="text" id="FamilyName">
+                <br>
+
+                <p>
+                    Gender: 
+                    <input type="radio" id="Female" name="Gender">
+                    <label for="Female">Female</label>
+
+                    <input type="radio" id="Male" name="Gender">
+                    <label for="Male">Male</label>
+                </p>
+
+                <label for="age">What age category are you from?</label>
+                <select name="age" id="age">
+                    <option value="under18">Less than 18</option>
+                    <option value="under30">18-30</option>
+                    <option value="above30">31-99</option>
+                </select>
+                <br><br>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">   
+        </fieldset>
+        <br>
+        <fieldset class="field_set2">
+            <legend style="color: darkred;">Survey Questions</legend>
+
+            <p>Which animals would you like to have? (Select all that apply)</p>
+
+            <input type="checkbox" id="Cat" name="selectanimals">
+            <label for="Cat">Cat</label>
+            
+            <input type="checkbox" id="Dog" name="selectanimals">
+            <label for="Dog">Dog</label>
+
+            <input type="checkbox" id="Rabbit" name="selectanimals">
+            <label for="Rabbit">Rabbit</label>
+
+            <input type="checkbox" id="Ferret" name="selectanimals">
+            <label for="Ferret">Ferret</label>
+
+            <input type="checkbox" id="Bird" name="selectanimals">
+            <label for="Bird">Bird</label>
+
+            <input type="checkbox" id="GuineaPig" name="selectanimals">
+            <label for="GuineaPig">Guinea Pig</label>
+
+            <input type="checkbox" id="Other" name="selectanimals">
+            <label for="Other">Other</label>
+            <br><br>
+
+            <label>List your 3 favorite animal species:</label>
+            <br>
+            <input type="text" id="species1" name="FavoriteSpecies">
+            <input type="text" id="species2" name="FavoriteSpecies">
+            <input type="text" id="species3" name="FavoriteSpecies">
+            <br><br>
+
+            <p>If you were to have the choice, what color would you want your pet to be</p>
+            <input type="radio" id="Orange" name="petcolor">
+            <label for="Orange">Orange</label>
+            <input type="radio" id="Grey" name="petcolor">
+            <label for="Grey">Grey</label>
+            <input type="radio" id="Black" name="petcolor">
+            <label for="Black">Black</label>
+            <input type="radio" id="White" name="petcolor">
+            <label for="White">White</label>
+        </fieldset>
+        <br>
+
+        <p>Thank you for taking the time to fill out our survey!</p>
+        <input type="submit">
+        <input type="reset">
+        </form>
+    </body>
+</html>
